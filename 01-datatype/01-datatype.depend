@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1701254782 source:d:\c-anhdiep\01-datatype\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1701355670 source:d:\k19codec\01-datatype\main.c
+	<stdio.h>
+	<stdlib.h>
+
