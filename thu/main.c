@@ -12,6 +12,8 @@ int main()
 
     printf("\na = %d \nb = %d", a, b);
 
+    // xin chào mọi người tôi tên là Tân Tét ting
+
    /* int a = 2;
 
     a = a++ + ++a + a;
