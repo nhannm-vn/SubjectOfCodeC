@@ -5,7 +5,7 @@
 //nhập vào 1 số nguyên dương n >= 1
 //tính tổng của phép tính
 
-//1 + 1/2 + 1/3 + ... + 1/(1+2+3...+n)
+//1 + 1/3 + 1/6 + ... + 1/(1+2+3...+n)
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
         scanf("%d", &n);
     }while(n < 1);
 
-    //Sum 1 + 1/2 + 1/3 + ... + 1/(1+2+3...+n)
+    //Sum 1 + 1/3 + 1/6 + ... + 1/(1+2+3...+n)
 
     int sum = 0;
     float tong = 0;
@@ -26,7 +26,7 @@ int main()
         sum += i;
         tong += (float)1/sum;
     }
-    printf("\nTong cua day so la: %f", tong);
+    printf("\nTong cua day so la: %.2f", tong);
 
 
 
