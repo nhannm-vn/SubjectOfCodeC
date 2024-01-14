@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1701859812 source:d:\k19codec\08-counteven\main.c
+	<stdio.h>
+	<stdlib.h>
+

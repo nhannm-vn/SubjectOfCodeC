@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1703063736 source:d:\codehandmake\luyentaplai\22-inductivev2\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1703064222 source:d:\k19codec\22-inductivev2\main.c
+	<stdio.h>
+	<stdlib.h>
+
