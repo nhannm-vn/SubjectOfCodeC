@@ -7,7 +7,7 @@ void inputArray(int array[], int *size);
 void outputArray(int array[], int size);
 int findArrayInArray(int arrMain[], int sizeMain, int arrSub[], int sizeSub);
 void deleteElementByPos(int array[], int *size, int pos);
-void splice(int array[], int *size, int pos, int amount);
+int splice(int array[], int *size, int pos, int amount);
 void deleteArrayInArray(int arrMain[], int *sizeMain, int arrSub[], int sizeSub);
 int main()
 {
@@ -29,7 +29,6 @@ int main()
     outputArray(arrMain, sizeMain);
     return 0;
 }
-
 void deleteArrayInArray(int arrMain[], int *sizeMain, int arrSub[], int sizeSub){
     int pos = findArrayInArray(arrMain, *sizeMain, arrSub, sizeSub);
     do{
@@ -37,13 +36,15 @@ void deleteArrayInArray(int arrMain[], int *sizeMain, int arrSub[], int sizeSub)
         pos = findArrayInArray(arrMain, *sizeMain, arrSub, sizeSub);
     }while(pos != -1);
 }
-void splice(int array[], int *size, int pos, int amount){
+int splice(int array[], int *size, int pos, int amount){
+    if(pos < 0 || pos > *size - 1) return 0;
     for(int i = 1; i <= amount; i++){
         deleteElementByPos(array, size, pos);
     }
+    return 1;
 }
 void deleteElementByPos(int array[], int *size, int pos){
-    for(int i = 0; i <= *size - 2; i++){
+    for(int i = pos; i <= *size - 2; i++){
         array[i] = array[i+1];
     }
     (*size)--;
