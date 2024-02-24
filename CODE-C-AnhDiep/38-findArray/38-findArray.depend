@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706090799 source:d:\k19codec\38-findarray\main.c
+	<stdio.h>
+	<stdlib.h>
+

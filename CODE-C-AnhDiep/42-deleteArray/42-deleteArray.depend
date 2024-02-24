@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1708518180 source:d:\k19codec\42-deletearray\main.c
+	<stdio.h>
+	<stdlib.h>
+
