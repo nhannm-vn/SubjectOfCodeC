@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709170711 source:d:\homeworkandgithub\str_comarestr\main.c
+	<stdio.h>
+	<stdlib.h>
+
